@@ -7,6 +7,7 @@ makeCacheMatrix <- function(x = matrix()) {
         matrixInv <- NULL
         set <- function(y) {
                 x <<- y
+                message("load data")
                 matrixInv <<- NULL
         }
         get <- function() x
